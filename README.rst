@@ -16,7 +16,7 @@ It replaces/extends the TYPO3 lock facility t3lib_lock.
 
 .. BEGIN ext_emconf.php
 
-:Version live: `1.0.0 <https://github.com/netresearch/t3x-nr_lock/releases/tag/v1.0.0>`_
+:Version live: `1.0.1 <http://urgit11.aida.de/typo3/nr_lock/tree/v1.0.1>`_
 :Company: Netresearch GmbH & Co.KG
 :Author: | `Sebastian Mendel <~mendel.sebastian>`_
 

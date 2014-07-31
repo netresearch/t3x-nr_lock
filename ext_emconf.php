@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "nr_lock".
  *
- * Auto generated 31-07-2014 12:14
+ * Auto generated 31-07-2014 13:27
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -39,8 +39,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.0',
-	'_md5_values_when_last_written' => 'a:10:{s:9:"build.xml";s:4:"3f95";s:9:"ChangeLog";s:4:"8ac6";s:16:"ext_autoload.php";s:4:"99e3";s:17:"ext_localconf.php";s:4:"6fe2";s:10:"README.rst";s:4:"9694";s:18:"doc/ide_helper.php";s:4:"02db";s:12:"src/Lock.php";s:4:"6a79";s:24:"src/Backend/Abstract.php";s:4:"70ae";s:25:"src/Backend/Couchbase.php";s:4:"8dd7";s:21:"src/Backend/Redis.php";s:4:"be00";}',
+	'version' => '1.0.1',
+	'_md5_values_when_last_written' => 'a:10:{s:9:"build.xml";s:4:"3f95";s:9:"ChangeLog";s:4:"8da3";s:16:"ext_autoload.php";s:4:"99e3";s:17:"ext_localconf.php";s:4:"6fe2";s:10:"README.rst";s:4:"355a";s:18:"doc/ide_helper.php";s:4:"02db";s:12:"src/Lock.php";s:4:"6a79";s:24:"src/Backend/Abstract.php";s:4:"70ae";s:25:"src/Backend/Couchbase.php";s:4:"8dd7";s:21:"src/Backend/Redis.php";s:4:"75e0";}',
 	'suggests' => array(
 	),
 );

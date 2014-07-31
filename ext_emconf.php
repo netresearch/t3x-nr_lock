@@ -1,9 +1,9 @@
 <?php
 
 /***************************************************************
- * Extension Manager/Repository config file for ext "nr_cache".
+ * Extension Manager/Repository config file for ext "nr_lock".
  *
- * Auto generated 11-07-2014 15:17
+ * Auto generated 31-07-2014 12:14
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -39,8 +39,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '0.0.1',
-	'_md5_values_when_last_written' => 'a:13:{s:9:"build.xml";s:4:"64f8";s:9:"ChangeLog";s:4:"297f";s:16:"ext_autoload.php";s:4:"933b";s:17:"ext_localconf.php";s:4:"5711";s:10:"README.rst";s:4:"9467";s:18:"doc/ide_helper.php";s:4:"02db";s:33:"src/Netresearch/Cache/Session.php";s:4:"9e3a";s:39:"src/Netresearch/Cache/StreamWrapper.php";s:4:"5c42";s:43:"src/Netresearch/Cache/Backend/Couchbase.php";s:4:"05e9";s:39:"src/Netresearch/Cache/Backend/Redis.php";s:4:"88c4";s:39:"src/Netresearch/Cache/Frontend/Code.php";s:4:"df38";s:49:"src/Netresearch/Cache/Frontend/FunctionResult.php";s:4:"f35b";s:41:"src/Netresearch/Cache/Frontend/String.php";s:4:"9643";}',
+	'version' => '1.0.0',
+	'_md5_values_when_last_written' => 'a:10:{s:9:"build.xml";s:4:"3f95";s:9:"ChangeLog";s:4:"8ac6";s:16:"ext_autoload.php";s:4:"99e3";s:17:"ext_localconf.php";s:4:"6fe2";s:10:"README.rst";s:4:"9694";s:18:"doc/ide_helper.php";s:4:"02db";s:12:"src/Lock.php";s:4:"6a79";s:24:"src/Backend/Abstract.php";s:4:"70ae";s:25:"src/Backend/Couchbase.php";s:4:"8dd7";s:21:"src/Backend/Redis.php";s:4:"be00";}',
 	'suggests' => array(
 	),
 );

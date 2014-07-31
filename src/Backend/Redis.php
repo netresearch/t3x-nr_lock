@@ -161,7 +161,6 @@ LUA;
      */
     public function unlock($strIdentifier, $strToken = null)
     {
-        return true;
         if (null === $strToken) {
             $strUnlockScript
                 = <<<LUA

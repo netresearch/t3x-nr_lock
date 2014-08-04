@@ -74,7 +74,11 @@ class Backend_Redis extends Backend_Abstract
         }
 
         if (false === $bConnect) {
-            throw new \RuntimeException('Could not connect to redis server.');
+            throw new \RuntimeException(
+                'Could not connect to redis server.',
+                0,
+                empty($e) ? null : $e
+            );
         }
 
         if (strlen($arOptions['password'])) {

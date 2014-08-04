@@ -1,11 +1,11 @@
 <?php
 declare(encoding = 'UTF-8');
 /**
- * A caching backend which stores cache entries by using Redis.
+ * A caching backend which stores cache entries.
  *
- * @category   Controller
- * @package    Netresearch
- * @subpackage Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Controller
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    AGPL http://www.netresearch.de/
  * @link       http://www.netresearch.de/
@@ -15,9 +15,14 @@ declare(encoding = 'UTF-8');
 namespace Netresearch\Lock;
 
 /**
- * Class Netresearch_Lock_Backend_Redis
+ * Class Netresearch_Lock_Backend_Abstract
  *
- * @package Netresearch\Lock\Couchbase
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Backend
+ * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
+ * @license    AGPL http://www.netresearch.de/
+ * @link       http://www.netresearch.de/
  */
 abstract class Backend_Abstract
 {
@@ -50,7 +55,7 @@ abstract class Backend_Abstract
 
     /**
      * Acquire a lock and return when successful. If the lock is already open,
-     * the client will be
+     * the client will retry $nRetries times with a delay of $nSleep.
      *
      * It is important to know that the lock will be acquired in any case,
      * even if the request was blocked first. Therefore, the lock needs to be
@@ -133,8 +138,8 @@ abstract class Backend_Abstract
     /**
      * Release the lock identified by $strIdentifier und verified with $strToken. .
      *
-     * @param string  $strIdentifier Lock unique identifier
-     * @param string  $strToken      Lock token
+     * @param string $strIdentifier Lock unique identifier
+     * @param string $strToken      Lock token
      *
      * @return boolean Returns TRUE on success or FALSE on failure
      */

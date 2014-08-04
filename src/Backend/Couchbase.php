@@ -3,9 +3,9 @@ declare(encoding = 'UTF-8');
 /**
  * A locking backend which stores locks by using Couchbase.
  *
- * @category   Controller
- * @package    Netresearch
- * @subpackage Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Controller
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    AGPL http://www.netresearch.de/
  * @link       http://www.netresearch.de/
@@ -17,7 +17,12 @@ namespace Netresearch\Lock;
 /**
  * Class Netresearch_Lock_Backend_Couchbase
  *
- * @package Netresearch\Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Backend
+ * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
+ * @license    AGPL http://www.netresearch.de/
+ * @link       http://www.netresearch.de/
  */
 class Backend_Couchbase extends Backend_Abstract
 {
@@ -39,17 +44,17 @@ class Backend_Couchbase extends Backend_Abstract
      * Options
      * <code>
      * array(
-     *     // name            => default
-     *     'hostname'         => 'localhost',
-     *     'port'             => 6379,
-     *     'database'         => 0,
-     *     'password'         => '',
-     *     'compression'      => false,
-     *     'compressionLevel' => 1,
+     *     // name       => default
+     *     'hostname'    => 'localhost',
+     *     'username'    => '',
+     *     'password'    => '',
+     *     'bucket'      => 'default',
+     *     'persistent'  => true,
+     *     'compression' => false,
      * )
      * </code>
      *
-     * @param array $arOptions Redis connection options
+     * @param array $arOptions Couchbase connection options
      */
     public function __construct(array $arOptions)
     {
@@ -108,7 +113,7 @@ class Backend_Couchbase extends Backend_Abstract
 
     /**
      * Get Lock.
-     * Stores an exclusive key-value pair on redis instance.
+     * Stores an exclusive key-value pair on couchbase instance.
      *
      * @param string  $strIdentifier Lock name/id - name/key of stored value
      * @param string  $strToken      Lock token - stored as value

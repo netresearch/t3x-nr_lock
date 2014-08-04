@@ -1,10 +1,11 @@
 <?php
 declare(encoding = 'UTF-8');
 /**
+ * Holds class definition of \Netresearch\Lock\Lock
  *
- * @category   Controller
- * @package    Netresearch
- * @subpackage Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Controller
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    AGPL http://www.netresearch.de/
  * @link       http://www.netresearch.de/
@@ -15,7 +16,7 @@ declare(encoding = 'UTF-8');
 namespace Netresearch\Lock;
 
 /**
- * Class Session.
+ * Distributed lock manager, extended \t3lib_lock.
  *
  * UX class for t3lib_lock to handle locking in memory based backend.
  *
@@ -46,13 +47,17 @@ class Lock extends \t3lib_lock
 
 
     /**
-     * Constructor:
+     * Returns new \t3lib_lock child class object.
+     *
      * initializes locking, check input parameters and set variables accordingly.
      *
      * @param string  $id     ID to identify this lock in the system
      * @param string  $method Define which locking method to use. Defaults to "simple".
-     * @param integer $loops  Number of times a locked resource is tried to be acquired. Only used in manual locks method "simple".
-     * @param integer step    Milliseconds after lock acquire is retried. $loops * $step results in the maximum delay of a lock. Only used in manual lock method "simple".
+     * @param integer $loops  Number of times a locked resource is tried to be
+     *                        acquired. Only used in manual locks method "simple".
+     * @param integer $step   Milliseconds after lock acquire is retried.
+     *                        $loops * $step results in the maximum delay of a
+     *                        lock. Only used in manual lock method "simple".
      */
     public function __construct($id, $method = 'simple', $loops = 0, $step = 0)
     {

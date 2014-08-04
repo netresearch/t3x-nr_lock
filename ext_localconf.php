@@ -4,9 +4,9 @@
  *
  * PHP version 5
  *
- * @category   Aida
- * @package    Example
- * @subpackage Config
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Configuration
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    http://www.aida.de AIDA Copyright
  * @link       http://www.aida.de

@@ -3,9 +3,9 @@ declare(encoding = 'UTF-8');
 /**
  * A locking backend which stores locks by using Redis.
  *
- * @category   Controller
- * @package    Netresearch
- * @subpackage Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Controller
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    AGPL http://www.netresearch.de/
  * @link       http://www.netresearch.de/
@@ -17,7 +17,12 @@ namespace Netresearch\Lock;
 /**
  * Class Netresearch_Lock_Backend_Redis
  *
- * @package Netresearch\Lock
+ * @category   Netresearch
+ * @package    Lock
+ * @subpackage Backend
+ * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
+ * @license    AGPL http://www.netresearch.de/
+ * @link       http://www.netresearch.de/
  */
 class Backend_Redis extends Backend_Abstract
 {

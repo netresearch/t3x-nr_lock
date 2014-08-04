@@ -97,16 +97,6 @@ class Backend_Couchbase extends Backend_Abstract
                 COUCHBASE_OPT_COMPRESSION, COUCHBASE_COMPRESSION_NONE
             );
         }
-
-        //$this->couchbase->setOption(
-        //    COUCHBASE_OPT_IGNOREFLAGS, false
-        //);
-        //$this->couchbase->setOption(
-        //    COUCHBASE_OPT_SERIALIZER, COUCHBASE_SERIALIZER_JSON
-        //);
-        //$this->couchbase->setOption(
-        //    COUCHBASE_OPT_VOPTS_PASSTHROUGH, false
-        //);
     }
 
 

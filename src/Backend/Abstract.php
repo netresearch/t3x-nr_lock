@@ -86,6 +86,8 @@ abstract class Backend_Abstract
     ) {
         $arResult = array();
 
+        $strIdentifier = 'lock::' . $strIdentifier;
+
         if (null === $strToken) {
             $arResult['strToken'] = uniqid();
         } else {
@@ -144,6 +146,8 @@ abstract class Backend_Abstract
      */
     public function release($strIdentifier, $strToken = null)
     {
+        $strIdentifier = 'lock::' . $strIdentifier;
+
         if ($this->unlock($strIdentifier, $strToken)) {
             \t3lib_div::devLog(
                 'Released lock "' . $strIdentifier . '"',

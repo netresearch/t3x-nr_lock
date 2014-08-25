@@ -14,14 +14,6 @@ NR_Lock currently supports single Redis or Couchbase (experimental) caching
 server as locking instance.
 It replaces/extends the TYPO3 lock facility t3lib_lock.
 
-.. BEGIN ext_emconf.php
-
-:Version live: `1.0.1 <http://urgit11.aida.de/typo3/nr_lock/tree/v1.0.1>`_
-:Company: Netresearch GmbH & Co.KG
-:Author: | `Sebastian Mendel <~mendel.sebastian>`_
-
-.. END ext_emconf.php
-
 
 Requirements
 ============

@@ -9,8 +9,6 @@ declare(encoding = 'UTF-8');
  * @author     Sebastian Mendel <sebastian.mendel@netresearch.de>
  * @license    AGPL http://www.netresearch.de/
  * @link       http://www.netresearch.de/
- * @api
- * @scope       prototype
  */
 
 namespace Netresearch\Lock;

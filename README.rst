@@ -18,10 +18,10 @@ It replaces/extends the TYPO3 lock facility t3lib_lock.
 Requirements
 ============
 
-- Redis: => 1.6
+- Redis: => 2.4 - 2.8
 - Couchbase: => ???
-- PHP => 5.3
-- TYPO3 => 4.6
+- PHP => 5.3 - 5.5
+- TYPO3 => 4.5 - 6.2
 - PHP/redis => 1.6
 
 

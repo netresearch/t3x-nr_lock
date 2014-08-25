@@ -68,7 +68,7 @@ ToDo
 
 - Support multiple caching server.
 - Test using LIST for locks with redis (performance).
-
+- Use nr_lock in TYPO3 6.2 ClassLoader - this is currently hard coded in the TYPO3 core
 
 Referenzen
 ==========
